@@ -1,167 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
-.main{
+body{
+    background-image: linear-gradient(to right,black,rgb(51, 13, 51),rgb(32, 6, 56));
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    /* border:3px solid green; */
+    height: auto;
 }
-
-/* SIDE BAR */
-
-.side-bar{
-    width:350px;
-    height: 100%;
-    background-color: grey;
-    /* border:3px solid red; */
-}
-.profile-details{
-    width:100%;
-    height: 40%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    color:white;
-    background-color: rgb(95, 94, 94);
-}
-.profile-image{
-    width:100px;
-    height:100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:30% ;
-    overflow: hidden;
-    margin-bottom:20px;
-}
-.profile-image img{
-     width: 100%;
-
-}
-.socials ul{
-    display: flex;
-    gap:10px;
+nav{
+    width: 90%;
+    height: 60px;
     margin:10px;
-}
-.socials ul li{
-    list-style-type: none;
-    cursor: pointer;
-}
-.socials ul li img{
-    width:20px;
-}
-
-
-.profile-menu{
-    width:100%;
-    height: 60%;
-    color:white;
-    border:2px solid transparent;
-}
-.profile-menu ul{
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin:20px;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right,rgb(87, 3, 87),rgb(112, 10, 207));
+}
+nav ul{
+    display: flex;
     gap:20px;
+    list-style-type:none;
 }
-.profile-menu ul li{
-    list-style-type: none;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* MAIN BAR */
-
-.main-bar{
-    width:100%;
-    height: 100%;
-    background-color:rgb(84, 83, 83);
-    display: flex;
-}
-
-/* ABOUT ME  */
-
-.aboutme{
-    color:white;
-    /* border:2px solid red; */
-    width: 100%;
-    height: 100%;
-    display:block;
-    flex-direction: column;
-    justify-content: center;
-    padding:50px;
-}
-
-.aboutme h4{
-    color:rgb(156, 153, 153)
-}
-.aboutme h1 span{
-    color:rgb(156, 153, 153)
-}
-.aboutme p{
-    width:600px;
-    margin:20px 0;
-}
-.aboutme-button{
-
-}
-.aboutme button{
-    width:120px;
-    height: 35px;
-    color:white;
-    background-color: rgb(0, 140, 255);
+nav ul li button{
+    height:50px;
+    width: 100px;
+    margin-right:-15px;
+    border-radius: 40px;
     border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin:10px 2px;
-}
-.aboutme button:nth-child(2){
-    background-color:grey;
-}
-.aboutme button:hover{
-    color: rgb(0, 140, 255);
-    background-color: white;
-    transition:0.4s;
-}
-.aboutme button:nth-child(2):hover{
-    background-color:white;
-    color:grey;
-}
-
-#education{
-    display: none;
-    width:100%;
-    height: 100%;
-    background-color: pink;
-}
-
-#projects{
-    display: none;
-    width:100%;
-    height: 100%;
-    background-color: green;
-}
-
-#achievement{
-    display: none;
-    width:100%;
-    height: 100%;
-    background-color: red;
+    background-color: rgb(94, 35, 94);
 }
